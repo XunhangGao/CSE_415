@@ -1,0 +1,7 @@
+for shop in fruitShops:
+        tempCost = 0.0
+        for fruit, numPound in orderList:
+            tempCost = tempCost + shop.getCostPerPound(fruit)*numPound
+            if totalCost == 0.0 or totalCost > tempCost:
+                totalCost = tempCost
+                result = shop.getName
